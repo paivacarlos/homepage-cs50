@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Seu CSS -->
+    <link href="style.css" rel="stylesheet">
+
+    <title>Contacts</title>
+</head>
+<body class="page-contact">
+    <nav class="navbar navbar-expand-lg navbar-dark site-nav">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">Contacts</a>
+
+            <div class="navbar-nav">
+
+            <a class="nav-link text-white" href="index.html">Home</a>
+            <a class="nav-link text-white" href="about.html">About</a>
+            <a class="nav-link text-white" href="projects.html">Projects</a>
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main class="page-section contact-section">
+        <div class="container py-5">
+            <section>
+                <header>
+                    <h1 class="mb-3">Contact</h1>
+                    <p class="lead mb-4">You can reach me through the channels below.</p>
+                </header>
+                <h2 class="h4 mb-3">My Channels</h2>
+                <p id="email-text" data-email="carlosadolfo.paiva@oultook.com">Email: carlosadolfo.paiva@oultook.com</p>
+                <button id="copy-email-btn" type="button" class="btn btn-success mt-2">
+                    Copy email
+                </button>
+                <p id="copy-feedback" class="mt-2 mb-0 small"></p>
+                <a
+                    href="https://www.linkedin.com/in/carlos-paiva-5845aa179/"
+                    class="btn btn-primary mt-3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn Profile Carlos Paiva
+                </a>
+                <form id="contact-form" class="mt-4" novalidate>
+                    <h2 class="h5 mb-3">Quick message</h2>
+                    <input
+                        id="name-input"
+                        type="text"
+                        class="form-control mb-2"
+                        placeholder="Your name"
+                        aria-label="Your name"
+                        minlength="4"
+                        required
+                    >
+                    <p id="name-error" class="mb-2 small text-danger"></p>
+                    <input
+                        id="email-input"
+                        type="email"
+                        class="form-control mb-3"
+                        placeholder="Your email"
+                        aria-label="Your email"
+                        required
+                    >
+                    <p id="email-error" class="mb-2 small text-danger"></p>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                    <p id="form-feedback" class="mt-2 mb-0 small"></p>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-center py-3">
+        <p class="mb-0">&copy; 2026 Carlos Paiva</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
